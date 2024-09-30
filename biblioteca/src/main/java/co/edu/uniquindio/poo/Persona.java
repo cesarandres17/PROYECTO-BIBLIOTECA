@@ -1,17 +1,32 @@
 package co.edu.uniquindio.poo;
 
+/**
+ * Clase abstracta Persona que representa a una persona 
+ * en el sistema, conteniendo información básica como nombre, 
+ * cédula, teléfono y correo.
+ */
 public abstract class Persona {
-    private String nombre;
-    private String cedula;
-    private String telefono;
-    private String correo;
+    private String nombre; // Nombre de la persona
+    private String cedula; // Cédula de la persona
+    private String telefono; // Teléfono de la persona
+    private String correo; // Correo electrónico de la persona
 
+    /**
+     * Constructor de Persona.
+     * 
+     * @param nombre Nombre de la persona
+     * @param cedula Cédula de la persona
+     * @param telefono Teléfono de la persona
+     * @param correo Correo electrónico de la persona
+     */
     public Persona(String nombre, String cedula, String telefono, String correo) {
         this.nombre = nombre;
         this.cedula = cedula;
         this.telefono = telefono;
         this.correo = correo;
     }
+
+    // Getters y setters para los atributos
 
     public String getNombre() {
         return nombre;
@@ -44,7 +59,4 @@ public abstract class Persona {
     public void setCorreo(String correo) {
         this.correo = correo;
     }
-
-    
 }
-
