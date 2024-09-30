@@ -1,11 +1,11 @@
 package co.edu.uniquindio.poo;
 
 /**
- * Clase abstracta Persona que representa a una persona 
+ * Clase  Persona que representa a una persona 
  * en el sistema, conteniendo información básica como nombre, 
  * cédula, teléfono y correo.
  */
-public abstract class Persona {
+public class Persona {
     private String nombre; // Nombre de la persona
     private String cedula; // Cédula de la persona
     private String telefono; // Teléfono de la persona
